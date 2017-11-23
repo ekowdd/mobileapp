@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.mobilecreative.mobileapps.activity.GuestLoginActivity">
+    <ImageView
+        android:src="@drawable/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rtg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_guest"
+            android:hint="Email"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/password_guest"
+            android:hint="Name"
+            android:drawableLeft="@drawable/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:onClick="onLoginGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDE20B"
+            android:text="SIGN IN GUEST"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:gravity="center|right"
+        android:text="Forgot Password?"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:onClick="onSignUp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:text="DON'T HAVE ACCOUNT ? SIGN UP"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

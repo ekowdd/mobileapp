@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp"
+    tools:context=".activity.ContactActivity">
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:background="@drawable/rtg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phone"
+                    android:gravity="center|left"
+                    android:text="Phone"/>
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" : "/>
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0815 741 85 711"/>
+            </TableRow>
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/wa"
+                    android:gravity="center|left"
+                    android:text="WA"/>
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" : "/>
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0815 741 85 711"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:gravity="center|left"
+                    android:text="Email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="support@indonesiadivesafaris"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

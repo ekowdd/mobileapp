@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobilecreative.mobileapps.activity.SignUpActivity">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rtg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="Email"/>
+
+            <EditText
+                android:id="@+id/mPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/key"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/mRPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/key"
+                android:hint="Repeat Password"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#FDE20B"
+                android:onClick="OnSignUp"
+                android:text="SIGN IN"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="ALREADY HAVE ACCOUNT ?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:onClick="onSiginAccount"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="SIGN IN"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

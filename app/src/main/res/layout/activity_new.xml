@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="#edeaea"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewActivity">
+
+    <TextView
+        android:gravity="center"
+        android:text="06/10/2017 21:08 AM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.CardView
+        android:onClick="isCekToLog"
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <View
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Dive Schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Flash....."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

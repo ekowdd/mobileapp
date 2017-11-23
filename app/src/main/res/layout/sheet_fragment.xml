@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?android:colorBackground"
+              android:orientation="vertical">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/viewSiteLoc"
+                android:hint="Site Location"
+                android:drawableLeft="@drawable/site_icon"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="City"
+                android:id="@+id/viewCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/loc_icon"/>
+
+            <EditText
+                android:id="@+id/viewCountry"
+                android:hint="Country"
+                android:drawableLeft="@drawable/country_icon"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/viewDepth"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/depth_icon"
+                    android:hint="Depth"/>
+
+                <EditText
+                    android:id="@+id/viewDiveTime"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/time_icon"
+                    android:hint="Dive Time"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/viewDate"
+                android:hint="Date"
+                android:drawableLeft="@drawable/date_icon"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/saveButton"
+                android:background="@drawable/crcle_btn"
+                android:layout_marginLeft="15dp"
+                android:text="Save"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
